@@ -1,0 +1,25 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  width: 100vw;
+}
+
+.grid {
+  border: 1px solid #000;
+  display: grid;
+  overflow: hidden;
+}
+
+.grid-item {
+  background-color: #456;
+}

@@ -1,0 +1,2 @@
+- Reference
+  - [set-timeline-duration](https://greensock.com/forums/topic/14725-set-timeline-duration-regardless-of-each-tween-duration-in-timelinemax/?do=findComment&comment=62994&_rid=115212)

@@ -1,0 +1,14 @@
+[
+  {"name": "root", "parent": null, "value": null},
+  {"name": "red", "parent": "root", "value": null},
+  {"name": "blue", "parent": "root", "value": null},
+  {"name": "green", "parent": "root", "value": null},
+  {"name": "pink", "parent": "root", "value": null},
+  {"name": "active", "parent": "pink", "value": 4},
+  {"name": "active", "parent": "red", "value": 3},
+  {"name": "inactive", "parent": "red", "value": 1},
+  {"name": "active", "parent": "blue", "value": 1},
+  {"name": "inactive", "parent": "blue", "value": 2},
+  {"name": "active", "parent": "green", "value": 3},
+  {"name": "inactive", "parent": "green", "value": 2}
+]

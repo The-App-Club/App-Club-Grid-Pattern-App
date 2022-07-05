@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="a"></div>
+    <script>
+      const data = [
+        {
+          top: 0,
+          left: 0,
+          width: 500,
+          height: 500,
+        },
+        {
+          top: 0,
+          left: 0,
+          width: 263,
+          height: 500,
+        },
+        {
+          top: 0,
+          left: 0,
+          width: 138,
+          height: 275,
+        },
+        {
+          top: 0,
+          left: 0,
+          width: 138,
+          height: 132,
+        },
+        {
+          top: 0,
+          left: 0,
+          width: 63,
+          height: 79,
+        },
+        {
+          top: 0,
+          left: 0,
+          width: 63,
+          height: 26,
+        },
+        {
+          top: 79,
+          left: 0,
+          width: 63,
+          height: 53,
+        },
+        {
+          top: 0,
+          left: 138,
+          width: 125,
+          height: 275,
+        },
+        {
+          top: 0,
+          left: 138,
+          width: 125,
+          height: 118,
+        },
+        {
+          top: 0,
+          left: 138,
+          width: 41,
+          height: 118,
+        },
+      ];
+
+      const aDom = document.querySelector(`#a`);
+
+      data.forEach((info, index) => {
+        const bDom = document.createElement("div");
+        bDom.classList.add("b");
+        bDom.style.top = `${info.top}px`;
+        bDom.style.left = `${info.left}px`;
+        bDom.style.width = `${info.width}px`;
+        bDom.style.height = `${info.height}px`;
+        aDom.appendChild(bDom);
+      });
+    </script>
+    <style>
+      #a {
+        position: relative;
+      }
+      .b {
+        position: absolute;
+        border: 1px solid;
+      }
+    </style>
+  </body>
+</html>
