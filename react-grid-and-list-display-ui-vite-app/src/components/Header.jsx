@@ -10,7 +10,7 @@ const Header = ({headerTitle, displayType, handleSearch, handleClick}) => {
         position: sticky;
         top: 0;
         backdrop-filter: blur(10px);
-        padding: 1rem 1.5rem;
+        padding: 1rem 0.5rem;
         background: rgba(255, 255, 255, 0.3);
         z-index: 1;
         min-height: 3rem;

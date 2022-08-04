@@ -42,13 +42,19 @@ const App = () => {
         >
           <div
             className={css`
-              padding: 1rem 1.5rem;
+              padding: 1rem 0;
               display: flex;
               align-items: center;
             `}
           >
             <img src={logo} alt={`logo`} width={80} />
-            <h1>Bebeop Gallery</h1>
+            <h1
+              className={css`
+                font-size: 1.35rem;
+              `}
+            >
+              Bebeop Gallery
+            </h1>
           </div>
 
           <Scrollbars
@@ -76,9 +82,10 @@ const App = () => {
                   gap: 1rem;
                 }
                 &.grid {
-                  column-count: 2;
+                  display: grid;
+                  grid-template-columns: repeat(2, 1fr);
+                  gap: 1rem;
                   > li {
-                    margin-bottom: 1rem;
                   }
                 }
               }
@@ -94,7 +101,7 @@ const App = () => {
               className={cx(
                 css`
                   list-style: none;
-                  padding: 1rem 1.5rem;
+                  padding: 1rem 0;
                 `,
                 `${displayType}`
               )}
